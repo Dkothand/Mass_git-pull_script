@@ -4,6 +4,8 @@ These scripts were developed by Mark DeMay at General Assembly, I have slightly 
 ## Purpose
 While working as an IA at General Assembly I wanted a way to pull down each student's personal repository so I could evaluate and grade their homework as well as give meaningful feedback on how their code runs and any unforseen syntax errors. This need ecame even more important as the student were completeing assignments that involved setting up and running a server to even see their code in action.
 
+I found [this site](https://devhints.io/bash) helpful as a bash cheatsheet.
+
 ## Setup and Running Scripts
 
 #### 1. Create a parent directory to house all repos and scripts
