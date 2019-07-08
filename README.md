@@ -4,7 +4,7 @@ These scripts were developed by Mark DeMay at General Assembly, I have slightly 
 ## Purpose
 While working as an IA at General Assembly I wanted a way to pull down each student's personal repository so I could evaluate and grade their homework as well as give meaningful feedback on how their code runs and any unforseen syntax errors. This need ecame even more important as the student were completeing assignments that involved setting up and running a server to even see their code in action.
 
-I found [this site](https://devhints.io/bash) helpful as a bash cheatsheet.
+I found [devhints.io](https://devhints.io/bash) helpful as a bash cheatsheet.
 
 ## Setup and Running Scripts
 
@@ -12,9 +12,16 @@ I found [this site](https://devhints.io/bash) helpful as a bash cheatsheet.
 `mkdir class`
 
 #### 2. Populate directory
-This is the most labor-intensive part; you'll need to clone down each repository you'll want to have the script run on inside of the `class` directory we just made.
+- This is the most labor-intensive part; you'll need to clone down each repository you'll want to have the script run on inside of the `class` directory we just made, you can then `mv` the cloned repo to the student's name.
 
-Add `gapull.sh` and `gapullall.sh` files to `class` directory on the same level as the repositories.
+- Note that when cloning directories, naming conventions matter; don't have any whitespace.
+ex: `JaneB` is okay but `Jane B` or `JaneB  ` will not work
+
+- Add `gapull.sh` and `gapullall.sh` files to `class` directory on the same level as the repositories.
+
+- Give execute permissions to files
+`chmod +x gapull.sh`
+`chmod +x gapullall.sh`
 
 #### 3. Running the script
 `cd` into `class` directory
